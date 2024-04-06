@@ -1,0 +1,12 @@
+package geometry;
+
+public class Mainzad6 {
+    public static void main(String[] args) {
+        Square square = new Square(5.0);
+
+        System.out.println("Długość boku kwadratu: " + square.getLength());
+        System.out.println("Szerokość boku kwadratu: " + square.getWidth());
+        System.out.println("Pole kwadratu: " + square.calculateArea());
+        System.out.println("Obwód kwadratu: " + square.calculatePerimeter());
+    }
+}
