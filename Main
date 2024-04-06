@@ -1,0 +1,13 @@
+package geometry;
+
+public class Main {
+    public static void main(String[] args) {
+        ColoredCircle coloredCircle = new ColoredCircle(new Point(2.0, 2.0), 4.0, "blue");
+
+        System.out.println("Centrum kolorowego koła: (" + coloredCircle.getCenter().getX() + ", " + coloredCircle.getCenter().getY() + ")");
+        System.out.println("Promień kolorowego koła: " + coloredCircle.getRadius());
+        System.out.println("Kolor koła: " + coloredCircle.getColor());
+        System.out.println("Obwód kolorowego koła: " + coloredCircle.calculatePerimeter());
+        System.out.println("Pole powierzchni kolorowego koła: " + coloredCircle.getArea());
+    }
+}
