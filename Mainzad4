@@ -1,0 +1,23 @@
+package geometry;
+
+public class Mainzad4 {
+    public static void main(String[] args) {
+        
+        Circle[] circles = {
+            new Circle(new Point(0, 0), 1),
+            new ColoredCircle(new Point(1, 1), 2, "czerwony"),
+            new Circle(new Point(2, 2), 3),
+            new ColoredCircle(new Point(3, 3), 4, "niebieski")
+        };
+
+       
+        for (Circle circle : circles) {
+            System.out.println("Pole koła: " + circle.getArea());
+
+        
+            if (circle instanceof ColoredCircle) {
+                System.out.println("Kolor koła: " + ((ColoredCircle)circle).getColor());
+            }
+        }
+    }
+}
